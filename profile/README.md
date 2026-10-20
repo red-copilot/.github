@@ -26,6 +26,7 @@
 
 <p align="center">
   <a href="https://github.com/orgs/red-copilot/repositories">Explore Repositories · 浏览仓库</a> ·
+  <a href="https://github.com/red-copilot/.github/blob/main/BRAND.md">Brand & Metadata · 品牌规范</a> ·
   <a href="https://github.com/red-copilot/.github/blob/main/CONTRIBUTING.md">Contribute · 参与贡献</a> ·
   <a href="https://github.com/red-copilot/.github/blob/main/SECURITY.md">Security Policy · 安全政策</a>
 </p>
@@ -71,6 +72,8 @@ We develop workflows for organizing assets, tracking observations, managing find
 ## Projects & Engineering
 <sub>项目与工程实践</sub>
 
+<p><img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-red-harness.svg" alt="Red Harness Python Runtime" width="72" align="left" /></p>
+
 ### [Red Harness · Python Runtime](https://github.com/red-copilot/red-copilot)
 <sub>安全智能体执行与可复现评测运行时</sub>
 
@@ -78,12 +81,16 @@ A Python runtime for reproducible security-agent execution and evaluation. It co
 
 <sub>以 Python 实现安全智能体的可复现执行与评测，连接竞赛任务、Pi RPC 会话、隔离的 Kali 容器、预算、事件驱动的世界状态与独立验证器。当前架构入口为 [架构 v2](https://github.com/red-copilot/red-copilot/blob/main/docs/agent-architecture-v2.md)。</sub>
 
+<p><img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-harness-sdk.svg" alt="Red Harness Go SDK" width="72" align="left" /></p>
+
 ### [Red Harness Go SDK](https://github.com/red-copilot/harness)
 <sub>Go 原生执行边界与 SDK</sub>
 
 A separate Go implementation exposing Library, CLI, and HTTP integration surfaces. It focuses on container isolation, execution budgets, SQLite audit records, and verifier-controlled outcomes. Its credential boundary differs from the Python runtime; consult the repository documentation for exact behavior.
 
 <sub>独立的 Go 实现，提供 Library、CLI 与 HTTP 接入方式，重点关注容器隔离、执行预算、SQLite 审计记录与验证器控制的结果。它与 Python Runtime 的凭据边界不同，具体行为以仓库文档为准。</sub>
+
+<p><img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-arl.svg" alt="ARL 3.0" width="72" align="left" /></p>
 
 ### [ARL 3.0 · Asset Reconnaissance Lighthouse](https://github.com/red-copilot/red-x)
 <sub>授权资产侦察与外部攻击面管理</sub>
