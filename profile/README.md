@@ -1,3 +1,5 @@
+![Red Copilot — AI-Native Offensive Security Engineering](https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner.svg)
+
 <div align="center">
 
 # 🔴 Red Copilot
