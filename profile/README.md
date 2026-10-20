@@ -9,7 +9,7 @@
 <h2 align="center">AI-Native Offensive Security Engineering</h2>
 
 <p align="center">
-  <strong>Autonomy needs control. Results need evidence.</strong>
+  <strong>Build autonomous systems. Prove real outcomes.</strong>
 </p>
 
 <p align="center">
