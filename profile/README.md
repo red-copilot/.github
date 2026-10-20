@@ -6,40 +6,40 @@
   </picture>
 </p>
 
-<h2 align="center">AI × Offensive Security</h2>
+<h2 align="center">AI-Native Offensive Security Engineering</h2>
 
 <p align="center">
-  <strong>Autonomous agents. Isolated execution. Verified outcomes.</strong>
+  <strong>Autonomy needs control. Results need evidence.</strong>
 </p>
 
 <p align="center">
-  <kbd>EVALUATE</kbd>&nbsp;&nbsp;
-  <kbd>EXECUTE</kbd>&nbsp;&nbsp;
-  <kbd>VERIFY</kbd>&nbsp;&nbsp;
-  <kbd>DISCOVER</kbd>
+  <kbd>PLAN</kbd>&nbsp;&nbsp;→&nbsp;&nbsp;
+  <kbd>EXECUTE</kbd>&nbsp;&nbsp;→&nbsp;&nbsp;
+  <kbd>OBSERVE</kbd>&nbsp;&nbsp;→&nbsp;&nbsp;
+  <kbd>VERIFY</kbd>
 </p>
 
 ---
 
 ## What we build
 
-Red Copilot works at the intersection of AI and offensive security: autonomous agents that plan multi-step tasks, use security tools, understand attack surface, and produce verifiable results within explicit authorization boundaries.
+Red Copilot engineers reliable AI systems for offensive security. We build the infrastructure around the model: execution boundaries, tool feedback, state tracking, budget control, observability, and independent verification.
 
-We focus on the system around the model—not just the prompt. Reliable offensive-security agents need **execution boundaries, tool feedback, state tracking, budget control, and authoritative verification**.
+**A convincing agent response is not proof of success.** Systems should be judged by reproducible outcomes and evidence from the environment—not by the model’s claims alone.
 
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h3>01 / Autonomy</h3>
-      <p>Agents that plan, act, observe, and adapt instead of following a fixed one-shot workflow.</p>
+      <h3>01 / Agent autonomy</h3>
+      <p>Multi-step agents that plan, act, observe, recover, and adapt as the environment changes.</p>
     </td>
     <td width="33%" valign="top">
-      <h3>02 / Trust</h3>
-      <p>Isolated execution, least privilege, audit records, and independent verification constrain every action.</p>
+      <h3>02 / Execution control</h3>
+      <p>Explicit scope, isolated runtimes, bounded budgets, least privilege, and traceable tool use.</p>
     </td>
     <td width="33%" valign="top">
-      <h3>03 / Surface</h3>
-      <p>Assets, exposure, risk, and tasks connected into a traceable context for offensive decisions.</p>
+      <h3>03 / Evidence-based evaluation</h3>
+      <p>Independent verifiers, reproducible tasks, structured traces, and measurable results.</p>
     </td>
   </tr>
 </table>
