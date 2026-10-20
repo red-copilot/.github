@@ -36,7 +36,7 @@ Each project README should help readers answer four questions quickly:
 - Do not claim tests passed unless they were actually run. · 未实际执行的测试不得宣称通过。
 - Explain security boundaries, permissions, failure modes, and known limitations. · 明确说明安全边界、权限、失败模式与已知限制。
 
-## Related resources · 相关资源
+## Related Resources · 相关资源
 
 - [Organization profile](profile/README.md) · 组织主页
 - [Contributing guide](CONTRIBUTING.md) · 贡献指南
