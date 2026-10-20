@@ -1,93 +1,119 @@
-![Red Copilot — AI-Native Offensive Security Engineering](https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner.svg)
-
-<div align="center">
-
-# 🔴 Red Copilot
-
-### AI-Native Offensive Security Engineering
-
-**Building reliable AI agents for authorized security research and automated testing.**
-
-<p>
-  <a href="https://github.com/red-copilot">
-    <img src="https://img.shields.io/badge/Focus-AI%20%2B%20Security-b91c1c?style=for-the-badge" alt="AI and Security" />
-  </a>
-  <a href="https://github.com/orgs/red-copilot/repositories">
-    <img src="https://img.shields.io/badge/Engineering-Agent%20Harness-18181b?style=for-the-badge" alt="Agent Harness" />
-  </a>
-  <a href="https://github.com/orgs/red-copilot/repositories">
-    <img src="https://img.shields.io/badge/Approach-Evidence%20Driven-7f1d1d?style=for-the-badge" alt="Evidence Driven" />
-  </a>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner.svg" alt="Red Copilot — AI × Offensive Security" width="100%" />
 </p>
 
-</div>
+<h2 align="center">AI × Offensive Security</h2>
+
+<p align="center">
+  <strong>Autonomous agents. Isolated execution. Verified outcomes.</strong>
+</p>
 
 ---
 
-## What we're building
+## What we build
 
-Red Copilot explores the engineering behind AI-powered offensive security: agents that can plan multi-step tasks, use tools, interpret results, and verify outcomes in controlled environments.
+Red Copilot works at the intersection of AI and offensive security: autonomous agents that plan multi-step tasks, use security tools, understand attack surface, and produce verifiable results within explicit authorization boundaries.
 
-We focus on the system around the model—not just the prompt. Reliable security agents need clear execution boundaries, useful feedback, traceable evidence, and measurable results.
-
-## Focus areas
+We focus on the system around the model—not just the prompt. Reliable offensive-security agents need **execution boundaries, tool feedback, state tracking, budget control, and authoritative verification**.
 
 <table>
   <tr>
-    <td width="50%">
-      <h3>🤖 Agent Engineering</h3>
-      Multi-step workflows, tool use, orchestration, and context management for security tasks.
+    <td width="33%" valign="top">
+      <h3>01 / Autonomy</h3>
+      <p>Agents that plan, act, observe, and adapt instead of following a fixed one-shot workflow.</p>
     </td>
-    <td width="50%">
-      <h3>🧰 Harness Engineering</h3>
-      Reliable execution, state management, guardrails, retries, and observable agent behavior.
+    <td width="33%" valign="top">
+      <h3>02 / Trust</h3>
+      <p>Isolated execution, least privilege, audit records, and independent verification constrain every action.</p>
     </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>🎯 Automated Security Testing</h3>
-      Repeatable assessment workflows for authorized targets and controlled environments.
-    </td>
-    <td width="50%">
-      <h3>📏 Evaluation & Verification</h3>
-      Evidence-backed findings, reproducible experiments, and task-completion measurement.
+    <td width="33%" valign="top">
+      <h3>03 / Surface</h3>
+      <p>Assets, exposure, risk, and tasks connected into a traceable context for offensive decisions.</p>
     </td>
   </tr>
 </table>
 
-## Project portfolio
+## Three layers
 
-| Project | Focus | Start here |
-|---|---|---|
-| **[Red Harness](https://github.com/red-copilot/red-copilot)** | Reproducible evaluation runtime for security agents: task contracts, isolated execution, telemetry, budgets, and verification. | Read the project README for capabilities and evaluation workflow. |
-| **[Red Harness Go SDK](https://github.com/red-copilot/harness)** | Go-native execution and trust boundary for agents, including container isolation, Pi RPC transport, SQLite audit records, and authoritative verification. | Start with requirements and the Go library example. |
-| **[ARL · Asset Reconnaissance Lighthouse](https://github.com/red-copilot/red-x)** | Authorization-first external attack surface management and asset reconnaissance. | Start with the feature overview and authorization disclaimer. |
+```text
+                    ┌─────────────────────────┐
+                    │       RED COPILOT       │
+                    │  AI × OFFENSIVE SECURITY│
+                    └────────────┬────────────┘
+                                 │
+          ┌──────────────────────┼──────────────────────┐
+          │                      │                      │
+   ┌──────▼──────┐        ┌──────▼──────┐        ┌──────▼──────┐
+   │   EVALUATE  │        │   EXECUTE   │        │   DISCOVER  │
+   │ Red Harness │        │ Harness SDK │        │  ARL/red-x  │
+   └─────────────┘        └─────────────┘        └─────────────┘
+      Agent evals          Trust boundary         Attack surface
+```
 
-These projects address different layers of the workflow: **agent evaluation**, **controlled execution**, and **asset discovery**. See [all repositories](https://github.com/orgs/red-copilot/repositories) for the complete project list.
+## Projects
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <p><strong>EVALUATE</strong></p>
+      <h3><a href="https://github.com/red-copilot/red-copilot">Red Harness</a></h3>
+      <p>A reproducible evaluation runtime for security agents. Task contracts, isolated execution, budgets, telemetry, and authoritative verification form one closed loop.</p>
+      <p><code>Python</code> <code>Docker</code> <code>Pi</code></p>
+    </td>
+    <td width="33%" valign="top">
+      <p><strong>EXECUTE</strong></p>
+      <h3><a href="https://github.com/red-copilot/harness">Harness Go SDK</a></h3>
+      <p>A Go-native execution and trust boundary with container isolation, Pi RPC transport, SQLite audit records, and authoritative verification.</p>
+      <p><code>Go</code> <code>Docker</code> <code>SQLite</code></p>
+    </td>
+    <td width="33%" valign="top">
+      <p><strong>DISCOVER</strong></p>
+      <h3><a href="https://github.com/red-copilot/red-x">ARL / red-x</a></h3>
+      <p>An authorization-first external attack surface management and asset reconnaissance platform with traceable assets, risk, tasks, and reports.</p>
+      <p><code>Go</code> <code>React</code> <code>PostgreSQL</code></p>
+    </td>
+  </tr>
+</table>
 
 ## Engineering principles
 
-- **Evidence over assumptions** — validate findings with observable, reproducible results.
-- **Systems over prompts** — engineer the runtime, tools, and feedback loops around the model.
-- **Iteration over one-shot execution** — observe, evaluate, adapt, and retry deliberately.
-- **Reproducibility over demos** — measure outcomes in controlled environments.
-- **Authorization by design** — keep testing within explicitly permitted scope.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Authorization first</h3>
+      <p>Authorization is the starting condition, not a disclaimer. Testing stays within explicitly permitted scope.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Evidence over claims</h3>
+      <p>Agent messages and tool exit codes are observations. Only a verifier or benchmark evaluator can produce a successful verdict.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Isolated by default</h3>
+      <p>Containers, networks, credentials, and filesystems are isolated by default. Dangerous capabilities must be explicitly enabled.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Reproducible by design</h3>
+      <p>Tasks, seeds, environments, budgets, traces, and results are auditable, replayable, and comparable.</p>
+    </td>
+  </tr>
+</table>
 
-## Explore the organization
+## Enter the system
 
-- **[All repositories](https://github.com/orgs/red-copilot/repositories)** — explore projects and experiments.
-- **[Organization profile](https://github.com/red-copilot)** — follow the latest work and updates.
+<p align="center">
+  <a href="https://github.com/orgs/red-copilot/repositories"><strong>Browse repositories →</strong></a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/red-copilot/.github/blob/main/CONTRIBUTING.md">Contribute</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/red-copilot/.github/blob/main/SECURITY.md">Security policy</a>
+</p>
 
-## Collaborate
+<p align="center">
+  <strong>Build autonomous systems. Prove real outcomes.</strong>
+</p>
 
-We’re interested in practical work across agent runtimes, tool integration, security automation, evaluation, and reproducible research.
-
-If you're building dependable AI systems for security work, we'd love to hear from you.
-
-<div align="center">
-
-**Build better agents. Verify real outcomes.**
-
-<sub>All security testing must be performed only against systems you own or are explicitly authorized to assess.</sub>
-
-</div>
+<p align="center">
+  <sub>All security testing must be limited to systems you own or are explicitly authorized to assess.</sub>
+</p>
