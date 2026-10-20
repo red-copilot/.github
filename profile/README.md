@@ -7,8 +7,7 @@
 </p>
 
 <p align="center">
-  <strong>Security Engineering for the Agentic Era</strong>
-  <br/>
+  <strong>Security Engineering for the Agentic Era</strong><br/>
   <sub>面向智能体时代的安全工程</sub>
 </p>
 
@@ -16,14 +15,12 @@
 <p align="center"><strong>从智能体行动，到可验证的结果</strong></p>
 
 <p align="center">
-  We build engineering systems that make security agents controllable, observable, and verifiable.
-  <br/>
+  We build engineering systems that make security agents controllable, observable, and verifiable.<br/>
   <sub>我们构建可控、可观测、可验证的安全智能体工程系统。</sub>
 </p>
 
 <p align="center">
-  <code>Plan</code> → <code>Execute</code> → <code>Observe</code> → <code>Verify</code>
-  <br/>
+  <code>Plan</code> → <code>Execute</code> → <code>Observe</code> → <code>Verify</code><br/>
   <sub>规划 → 执行 → 观测 → 验证</sub>
 </p>
 
@@ -74,23 +71,33 @@ We develop workflows for organizing assets, tracking observations, managing find
 ## Projects & Engineering
 <sub>项目与工程实践</sub>
 
-### Red Harness
-<sub>安全智能体执行与评测框架</sub>
+### [Red Harness · Python Runtime](https://github.com/red-copilot/red-copilot)
+<sub>安全智能体执行与可复现评测运行时</sub>
 
-Red Harness explores reproducible execution for security agents. Its engineering work separates task definitions, agent execution, target environments, model and tool access, budgets, telemetry, and verification.
+A Python runtime for reproducible security-agent execution and evaluation. It connects benchmark tasks, Pi RPC sessions, isolated Kali containers, budgets, event-sourced world state, and independent verifiers. The current architecture entry point is [Architecture v2](https://github.com/red-copilot/red-copilot/blob/main/docs/agent-architecture-v2.md).
 
-<sub>Red Harness 面向安全智能体的可复现执行与评测，将任务定义、智能体运行、目标环境、模型与工具访问、预算、遥测和结果验证拆分为清晰的工程边界。</sub>
+<sub>以 Python 实现安全智能体的可复现执行与评测，连接竞赛任务、Pi RPC 会话、隔离的 Kali 容器、预算、事件驱动的世界状态与独立验证器。当前架构入口为 [架构 v2](https://github.com/red-copilot/red-copilot/blob/main/docs/agent-architecture-v2.md)。</sub>
 
-Current implementations include a Python-based evaluation runtime and a Go-native SDK. They are separate implementations with different integration contracts.
+### [Red Harness Go SDK](https://github.com/red-copilot/harness)
+<sub>Go 原生执行边界与 SDK</sub>
 
-<sub>目前包含 Python 评测运行时与 Go 原生 SDK 两条实现路线；两者是独立实现，接口与集成方式并不相同。</sub>
+A separate Go implementation exposing Library, CLI, and HTTP integration surfaces. It focuses on container isolation, execution budgets, SQLite audit records, and verifier-controlled outcomes. Its credential boundary differs from the Python runtime; consult the repository documentation for exact behavior.
 
-### ARL · Asset Reconnaissance Lighthouse
-<sub>资产侦察灯塔</sub>
+<sub>独立的 Go 实现，提供 Library、CLI 与 HTTP 接入方式，重点关注容器隔离、执行预算、SQLite 审计记录与验证器控制的结果。它与 Python Runtime 的凭据边界不同，具体行为以仓库文档为准。</sub>
 
-ARL is an external attack surface management and asset reconnaissance platform for authorized security testing. It organizes organizations, domains, assets, findings, and tasks into a traceable workflow.
+### [ARL 3.0 · Asset Reconnaissance Lighthouse](https://github.com/red-copilot/red-x)
+<sub>授权资产侦察与外部攻击面管理</sub>
 
-<sub>ARL 面向已授权安全测试，围绕组织、域名、资产、风险与任务构建可追溯的外部攻击面管理和资产侦察流程。</sub>
+A Go-based EASM and asset-reconnaissance platform that organizes organizations, domains, assets, findings, and tasks into traceable workflows. It includes an embedded React console, REST/SSE APIs, PostgreSQL-backed data, and Redis Streams task processing.
+
+<sub>基于 Go 的 EASM 与资产侦察平台，将组织、域名、资产、风险和任务组织为可追溯工作流，并提供嵌入式 React 控制台、REST/SSE API、PostgreSQL 数据存储与 Redis Streams 任务处理。</sub>
+
+### [Organization profile & shared standards](https://github.com/red-copilot/.github)
+<sub>组织主页与共享规范</sub>
+
+Brand assets, community health files, contribution guidance, and security policy for the organization.
+
+<sub>组织品牌素材、社区规范、贡献指南与安全政策。</sub>
 
 ## How We Approach Engineering
 <sub>我们的工程原则</sub>
