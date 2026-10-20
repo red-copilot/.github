@@ -55,6 +55,16 @@ We focus on the system around the model—not just the prompt. Reliable security
   </tr>
 </table>
 
+## Project portfolio
+
+| Project | Focus | Start here |
+|---|---|---|
+| **[Red Harness](https://github.com/red-copilot/red-copilot)** | Reproducible evaluation runtime for security agents: task contracts, isolated execution, telemetry, budgets, and verification. | Read the project README for capabilities and evaluation workflow. |
+| **[Red Harness Go SDK](https://github.com/red-copilot/harness)** | Go-native execution and trust boundary for agents, including container isolation, Pi RPC transport, SQLite audit records, and authoritative verification. | Start with requirements and the Go library example. |
+| **[ARL · Asset Reconnaissance Lighthouse](https://github.com/red-copilot/red-x)** | Authorization-first external attack surface management and asset reconnaissance. | Start with the feature overview and authorization disclaimer. |
+
+These projects address different layers of the workflow: **agent evaluation**, **controlled execution**, and **asset discovery**. See [all repositories](https://github.com/orgs/red-copilot/repositories) for the complete project list.
+
 ## Engineering principles
 
 - **Evidence over assumptions** — validate findings with observable, reproducible results.
