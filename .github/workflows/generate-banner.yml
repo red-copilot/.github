@@ -1,0 +1,110 @@
+name: Generate animated organization banner
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/generate-banner.yml"
+      - "assets/red-copilot-banner-animated.svg"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: animated-banner
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Pillow
+        run: python -m pip install --disable-pip-version-check pillow
+
+      - name: Render optimized looping GIF
+        run: |
+          python - <<'PY'
+          from PIL import Image, ImageDraw, ImageFont, ImageFilter
+          import math, os
+
+          W, H = 1200, 300
+          frames = []
+          try:
+              title_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 43)
+              sub_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 20)
+              mono_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 13)
+          except OSError:
+              title_font, sub_font, mono_font = ImageFont.load_default(), ImageFont.load_default(), ImageFont.load_default()
+
+          for frame in range(36):
+              im = Image.new("RGB", (W, H), (8, 11, 17))
+              px = im.load()
+              for y in range(H):
+                  for x in range(W):
+                      grid = (x % 48 == 0 or y % 48 == 0)
+                      glow = max(0, 1 - math.sqrt((x-930)**2 + (y-145)**2)/420)
+                      px[x, y] = (int(8+5*glow), int(11+3*glow), int(17+7*glow))
+                      if grid and ((x//48+y//48) % 3 == 0):
+                          px[x, y] = (13, 20, 29)
+              d = ImageDraw.Draw(im, "RGBA")
+              # Right-side radar / telemetry motif
+              cx, cy = 970, 148
+              for r in (42, 76, 110, 144):
+                  d.ellipse((cx-r, cy-r, cx+r, cy+r), outline=(240, 70, 88, 60), width=1)
+              angle = frame * 10
+              points = [(cx, cy)]
+              for step in range(0, 61):
+                  a = math.radians(angle - 42 + step * 1.4)
+                  points.append((cx + 144*math.cos(a), cy + 144*math.sin(a)))
+              d.polygon(points, fill=(230, 45, 68, 24))
+              d.line((cx, cy, cx+144*math.cos(math.radians(angle)), cy+144*math.sin(math.radians(angle))), fill=(255, 75, 95, 190), width=2)
+              for i, (x, y) in enumerate(((1035, 95), (1007, 188), (910, 110), (1070, 170), (932, 220))):
+                  pulse = (math.sin((frame+i*5)*math.pi/18)+1)/2
+                  rr = int(2 + pulse*3)
+                  d.ellipse((x-rr, y-rr, x+rr, y+rr), fill=(255, 75, 95, 100+int(pulse*155)))
+              # Left brand block
+              d.rounded_rectangle((48, 42, 58, 247), radius=5, fill=(240, 70, 88, 255))
+              d.text((82, 66), "RED COPILOT", font=title_font, fill=(244, 247, 251, 255), stroke_width=0)
+              d.text((84, 126), "SECURITY ENGINEERING FOR THE AGENTIC ERA", font=sub_font, fill=(240, 83, 101, 255))
+              d.text((84, 166), "面向智能体时代的安全工程", font=sub_font, fill=(178, 190, 204, 255))
+              d.line((84, 213, 660, 213), fill=(76, 91, 109, 140), width=1)
+              d.text((84, 228), "PLAN  /  EXECUTE  /  OBSERVE  /  VERIFY", font=mono_font, fill=(142, 158, 177, 255))
+              # Bottom telemetry line
+              x_end = 84 + ((frame * 23) % 570)
+              d.line((84, 260, 660, 260), fill=(42, 52, 65, 170), width=1)
+              d.line((84, 260, x_end, 260), fill=(240, 70, 88, 220), width=2)
+              frames.append(im.quantize(colors=128, method=Image.Quantize.MEDIANCUT))
+
+          out = "assets/red-copilot-banner.gif"
+          frames[0].save(out, save_all=True, append_images=frames[1:], duration=85, loop=0, optimize=True, disposal=2)
+          print(f"Generated {out}: {os.path.getsize(out)} bytes")
+          PY
+
+      - name: Point dark theme at GIF
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("profile/README.md")
+          s = p.read_text()
+          s = s.replace(
+              'https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner-animated.svg',
+              'https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner.gif'
+          )
+          p.write_text(s)
+          PY
+
+      - name: Commit generated banner
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/red-copilot-banner.gif profile/README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Add animated GIF organization banner"
+            git push
+          fi
