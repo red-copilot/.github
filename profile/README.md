@@ -2,153 +2,150 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner-light.svg" />
-    <img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner-light.svg" alt="Red Copilot — AI × Offensive Security" width="100%" />
+    <img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner-light.svg" alt="Red Copilot — AI-Native Offensive Security Engineering" width="100%" />
   </picture>
 </p>
 
-<h2 align="center">AI-Native Offensive Security Engineering<br/><sub>面向 AI 的进攻性安全工程</sub></h2>
+<p align="center">
+  <sub>INDEPENDENT SECURITY ENGINEERING · AGENT SYSTEMS · REPRODUCIBLE EVALUATION</sub>
+</p>
+
+<h1 align="center">Autonomy needs control.<br/>Results need evidence.</h1>
+<p align="center"><sub>自主能力需要工程控制，任务结果必须有证据支撑。</sub></p>
 
 <p align="center">
-  <strong>Build autonomous systems. Prove real outcomes.</strong><br/><sub>构建自主系统，以真实结果验证能力。</sub><br/><sub>构建自主系统，以真实结果验证能力。</sub>
+  We engineer the systems that make security agents measurable, bounded, and reliable.
+  <br/>
+  <sub>我们构建让安全智能体可衡量、可约束、可信赖的工程系统。</sub>
 </p>
 
 <p align="center">
-  <kbd>PLAN</kbd>&nbsp;&nbsp;→&nbsp;&nbsp;
-  <kbd>EXECUTE</kbd>&nbsp;&nbsp;→&nbsp;&nbsp;
-  <kbd>OBSERVE</kbd>&nbsp;&nbsp;→&nbsp;&nbsp;
-  <kbd>VERIFY</kbd>
+  <code>PLAN</code> &nbsp;→&nbsp; <code>EXECUTE</code> &nbsp;→&nbsp; <code>OBSERVE</code> &nbsp;→&nbsp; <code>VERIFY</code>
+  <br/>
+  <sub>规划 → 执行 → 观察 → 验证</sub>
 </p>
 
 ---
 
-## What we build
+## The idea
+<sub>核心理念</sub>
 
-<small>我们构建什么</small>
+**A model saying “done” is not a test passing.**
 
-Red Copilot engineers reliable AI systems for offensive security. We build the infrastructure around the model: execution boundaries, tool feedback, state tracking, budget control, observability, and independent verification.
+The hard part of an autonomous security agent is not just choosing the next tool. It is controlling what the agent can do, giving it useful feedback, recovering from failure, and independently proving what happened.
 
-<small>Red Copilot 致力于构建可靠的 AI 进攻性安全系统。我们关注模型之外的工程基础设施：执行边界、工具反馈、状态跟踪、预算控制、可观测性与独立验证。</small>
+<sub>**模型说“完成了”，不等于测试真正通过。** 自主安全智能体的难点不只是选择工具，而是约束执行权限、提供有效反馈、从失败中恢复，并独立验证实际发生的结果。</sub>
 
-**A convincing agent response is not proof of success.** Systems should be judged by reproducible outcomes and evidence from the environment—not by the model’s claims alone.
-
-<small>智能体给出令人信服的回答，不代表任务真正成功。系统应以可复现的结果和环境证据作为判断依据，而不是仅凭模型自述。</small>
+## What we engineer
+<sub>工程方向</sub>
 
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h3>01 / Agent autonomy<br/><sub>智能体自主性</sub></h3>
-      <p>Multi-step agents that plan, act, observe, recover, and adapt as the environment changes.</p><p><small>能够规划、行动、观察、恢复，并随环境变化持续调整的多步骤智能体。</small></p>
+      <p><strong>01 / AGENT SYSTEMS</strong></p>
+      <h3>Make agents adaptive</h3>
+      <p>Multi-step planning, tool use, state tracking, feedback, and recovery.</p>
+      <p><sub>让智能体具备多步骤规划、工具调用、状态跟踪、反馈处理与故障恢复能力。</sub></p>
     </td>
     <td width="33%" valign="top">
-      <h3>02 / Execution control<br/><sub>执行控制</sub></h3>
-      <p>Explicit scope, isolated runtimes, bounded budgets, least privilege, and traceable tool use.</p><p><small>通过明确的授权范围、隔离运行时、预算限制、最小权限和可追溯工具调用控制执行过程。</small></p>
+      <p><strong>02 / EXECUTION CONTROL</strong></p>
+      <h3>Make actions bounded</h3>
+      <p>Explicit scope, isolated environments, least privilege, budgets, and audit trails.</p>
+      <p><sub>通过明确授权范围、环境隔离、最小权限、预算限制与审计轨迹约束执行。</sub></p>
     </td>
     <td width="33%" valign="top">
-      <h3>03 / Evidence-based evaluation<br/><sub>基于证据的评测</sub></h3>
-      <p>Independent verifiers, reproducible tasks, structured traces, and measurable results.</p><p><small>通过独立验证器、可复现任务、结构化轨迹和可量化结果评估系统能力。</small></p>
+      <p><strong>03 / EVALUATION</strong></p>
+      <h3>Make outcomes verifiable</h3>
+      <p>Task contracts, independent verification, reproducible runs, and comparable results.</p>
+      <p><sub>以任务契约、独立验证、可复现运行和可比较结果衡量系统能力。</sub></p>
     </td>
   </tr>
 </table>
 
-## System map
-
-<small>系统架构</small>
+## System architecture
+<sub>系统架构</sub>
 
 ```mermaid
-flowchart LR
-    RC["RED COPILOT<br/>AI × Offensive Security"]:::core
-    EV["Red Harness<br/>Agent evaluation"]:::project
-    EX["Harness Go SDK<br/>Execution + trust boundary"]:::project
-    DS["ARL / red-x<br/>Attack surface discovery"]:::project
-    VR["Verifier / Evaluator<br/>Authoritative result"]:::verify
-
-    RC --> EV
-    EV --> EX
-    EX --> DS
-    EX --> VR
-    VR -. feedback .-> EV
-
-    classDef core fill:#111113,stroke:#ff2d2d,color:#ffffff,stroke-width:2px;
-    classDef project fill:#18181b,stroke:#52525b,color:#fafafa,stroke-width:1px;
-    classDef verify fill:#450a0a,stroke:#ef4444,color:#fecaca,stroke-width:1px;
-    linkStyle default stroke:#ef4444,stroke-width:1.5px;
+flowchart TD
+    A["Agent / Planner<br/>智能体与规划器"] --> B["Harness Runtime<br/>运行时与执行控制"]
+    B --> C["Isolated Environment<br/>隔离执行环境"]
+    C --> D["Observations & Traces<br/>观测结果与执行轨迹"]
+    D --> A
+    C --> E["Independent Verifier<br/>独立验证器"]
+    E --> F["Evidence-based Verdict<br/>基于证据的结果判定"]
+    F -. evaluation feedback .-> A
+    classDef agent fill:#18181b,stroke:#71717a,color:#fafafa;
+    classDef runtime fill:#450a0a,stroke:#ef4444,color:#fff1f2,stroke-width:2px;
+    classDef env fill:#27272a,stroke:#a1a1aa,color:#fafafa;
+    classDef verify fill:#3f1010,stroke:#f87171,color:#fff;
+    class A agent;
+    class B runtime;
+    class C,D env;
+    class E,F verify;
 ```
 
-<p align="center"><sub>Only the verifier or benchmark evaluator can close the loop.<br/>只有验证器或基准评测器才能完成最终判定并闭合反馈循环。</sub></p>
+<p align="center"><sub>The agent proposes actions. The environment produces observations. The verifier determines success.<br/>智能体提出行动，环境产生观测，验证器判定是否成功。</sub></p>
 
-## Projects
-
-<small>项目矩阵</small>
+## Project portfolio
+<sub>项目版图</sub>
 
 <table>
   <tr>
     <td width="33%" valign="top">
-      <p align="center"><a href="https://github.com/red-copilot/red-copilot"><img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-red-harness.svg" width="64" alt="Red Harness icon" /></a></p>
-      <h3 align="center"><a href="https://github.com/red-copilot/red-copilot">Red Harness</a><br/><sub>智能体评测与编排框架</sub></h3>
-      <p align="center"><strong>EVALUATE</strong></p>
-      <p>A reproducible evaluation runtime for security agents. Task contracts, isolated execution, budgets, telemetry, and authoritative verification form one closed loop.</p><p><small>面向安全智能体的可复现评测运行时，将任务契约、隔离执行、预算、遥测与权威验证整合为闭环。</small></p>
-      <p><code>Python</code> <code>Docker</code> <code>Pi</code></p>
+      <p><strong>01 — EVALUATE</strong></p>
+      <h3>Red Harness</h3>
+      <p>A reproducible runtime for evaluating security agents through task contracts, bounded execution, telemetry, and authoritative verification.</p>
+      <p><sub>面向安全智能体的可复现评测运行时，整合任务契约、受控执行、运行遥测与权威验证。</sub></p>
+      <p><code>Agent Evaluation</code> <code>Python</code> <code>Docker</code></p>
+      <p><sub>Repository: private development</sub></p>
     </td>
     <td width="33%" valign="top">
-      <p align="center"><a href="https://github.com/red-copilot/harness"><img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-harness-sdk.svg" width="64" alt="Harness Go SDK icon" /></a></p>
-      <h3 align="center"><a href="https://github.com/red-copilot/harness">Harness Go SDK</a><br/><sub>Go 执行与信任边界 SDK</sub></h3>
-      <p align="center"><strong>EXECUTE</strong></p>
-      <p>A Go-native execution and trust boundary with container isolation, Pi RPC transport, SQLite audit records, and authoritative verification.</p><p><small>原生 Go 执行与信任边界，提供容器隔离、Pi RPC 通信、SQLite 审计记录与权威验证。</small></p>
+      <p><strong>02 — EXECUTE</strong></p>
+      <h3>Harness Go SDK</h3>
+      <p>A Go-native execution boundary for controlled tool access, isolated workloads, audit records, and verification.</p>
+      <p><sub>原生 Go 执行边界，为受控工具访问、隔离任务、审计记录和结果验证提供基础能力。</sub></p>
       <p><code>Go</code> <code>Docker</code> <code>SQLite</code></p>
+      <p><sub>Repository: private development</sub></p>
     </td>
     <td width="33%" valign="top">
-      <p align="center"><a href="https://github.com/red-copilot/red-x"><img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-arl.svg" width="64" alt="ARL / red-x icon" /></a></p>
-      <h3 align="center"><a href="https://github.com/red-copilot/red-x">ARL / red-x</a><br/><sub>攻击面发现与资产分析</sub></h3>
-      <p align="center"><strong>DISCOVER</strong></p>
-      <p>An authorization-first external attack surface management and asset reconnaissance platform with traceable assets, risk, tasks, and reports.</p><p><small>以授权为先的外部攻击面管理与资产侦察平台，支持资产、风险、任务和报告的全程追踪。</small></p>
-      <p><code>Go</code> <code>React</code> <code>PostgreSQL</code></p>
+      <p><strong>03 — DISCOVER</strong></p>
+      <h3>ARL / red-x</h3>
+      <p>An authorization-first attack-surface and asset reconnaissance platform built around traceable assets, risks, tasks, and reports.</p>
+      <p><sub>以授权为先的攻击面管理与资产侦察平台，围绕可追踪的资产、风险、任务和报告组织工作流。</sub></p>
+      <p><code>Attack Surface</code> <code>Go</code> <code>React</code></p>
+      <p><sub>Repository: private development</sub></p>
     </td>
   </tr>
 </table>
 
 ## Engineering principles
+<sub>工程原则</sub>
 
-<small>工程原则</small>
+| Principle | 中文说明 |
+|---|---|
+| **Authorization first** | 授权是开始测试的前置条件，不是事后补充的免责声明。 |
+| **Evidence over claims** | 智能体自述不是成功证据；结论必须来自独立验证。 |
+| **Isolation by default** | 默认隔离环境、网络、凭据与文件系统；高风险能力必须显式启用。 |
+| **Bounded execution** | 对范围、时间、调用次数和资源消耗设置明确边界。 |
+| **Reproducibility** | 让任务、环境、执行轨迹和结果可审计、可回放、可比较。 |
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Authorization first<br/><sub>授权优先</sub></h3>
-      <p>Authorization is the starting condition, not a disclaimer. Testing stays within explicitly permitted scope.</p><p><small>授权是测试的前置条件，而不是免责声明。所有测试均限定在明确许可的范围内。</small></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Evidence over claims<br/><sub>证据优于自述</sub></h3>
-      <p>Agent messages and tool exit codes are observations. Only a verifier or benchmark evaluator can produce a successful verdict.</p><p><small>智能体消息和工具退出码都只是观测信息；成功结论必须由验证器或基准评测器给出。</small></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Isolated by default<br/><sub>默认隔离</sub></h3>
-      <p>Containers, networks, credentials, and filesystems are isolated by default. Dangerous capabilities must be explicitly enabled.</p><p><small>默认隔离容器、网络、凭据与文件系统；高风险能力必须经过显式授权才能启用。</small></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Reproducible by design<br/><sub>可复现设计</sub></h3>
-      <p>Tasks, seeds, environments, budgets, traces, and results are auditable, replayable, and comparable.</p><p><small>任务、随机种子、环境、预算、执行轨迹和结果均应可审计、可回放、可比较。</small></p>
-    </td>
-  </tr>
-</table>
-
-## Enter the system
-
-<small>开始探索</small>
+## Explore
+<sub>了解与参与</sub>
 
 <p align="center">
-  <a href="https://github.com/orgs/red-copilot/repositories"><strong>Browse repositories →</strong></a>
+  <a href="https://github.com/orgs/red-copilot/repositories"><strong>Browse repositories ↗</strong></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://github.com/red-copilot/.github/blob/main/CONTRIBUTING.md">Contribute</a>
+  <a href="https://github.com/red-copilot/.github/blob/main/CONTRIBUTING.md">Contributing</a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://github.com/red-copilot/.github/blob/main/SECURITY.md">Security policy</a>
+  <br/>
+  <sub>浏览仓库 · 参与贡献 · 阅读安全政策</sub>
 </p>
 
 <p align="center">
   <strong>Build autonomous systems. Prove real outcomes.</strong>
+  <br/>
+  <sub>构建自主系统，以真实结果验证能力。</sub>
 </p>
 
-<p align="center">
-  <sub>All security testing must be limited to systems you own or are explicitly authorized to assess.<br/>所有安全测试仅限于自有系统或已获得明确授权的目标。</sub>
-</p>
+<p align="center"><sub>Security testing must be limited to systems you own or are explicitly authorized to assess.<br/>所有安全测试仅限于自有系统或已获得明确授权的目标。</sub></p>
