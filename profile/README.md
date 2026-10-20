@@ -17,8 +17,8 @@
 </p>
 
 <p align="center">
-  We build security-agent systems that are controllable, observable, and verifiable.<br/>
-  <sub>我们构建可控、可观测、可验证的安全智能体工程系统。</sub>
+  We engineer security-agent systems that are controllable, observable, and verifiable.<br/>
+  <sub>我们致力于构建可控、可观测、可验证的安全智能体工程系统。</sub>
 </p>
 
 <p align="center">
@@ -33,9 +33,9 @@
 ### An agent's claim is not proof.
 <sub>智能体的声明，不等于事实。</sub>
 
-Reliable automation needs explicit authorization, bounded execution, observable traces, recoverable workflows, and independent verification—not just a model saying “done.”
+Reliable automation requires explicit authorization, bounded execution, observable traces, recoverable workflows, and independent verification. A model saying “done” is not, by itself, evidence of success.
 
-<sub>可靠的自动化需要明确授权、有界执行、过程观测、失败恢复与独立验证，而不是仅凭模型自述认定成功。</sub>
+<sub>可靠的自动化需要明确授权、有界执行、过程可观测、失败可恢复与独立验证。模型自述“已完成”，本身并不能证明任务成功。</sub>
 
 ---
 
@@ -43,25 +43,25 @@ Reliable automation needs explicit authorization, bounded execution, observable 
 
 ### <img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-red-harness.svg" width="34" align="center" alt="" /> Red Harness · Python Runtime
 
-A security-agent runtime for benchmark tasks, Pi RPC sessions, isolated Kali containers, execution budgets, event-sourced state, and independent verifiers.
+A reproducible runtime for security-agent tasks and benchmarks, integrating Pi RPC sessions, isolated Kali containers, execution budgets, event-sourced world state, and independent verification.
 
-<sub>安全智能体运行时：连接竞赛任务、Pi RPC 会话、隔离的 Kali 容器、执行预算、事件驱动状态与独立验证器。</sub>
+<sub>面向安全智能体任务与基准测试的可复现运行时，集成 Pi RPC 会话、隔离的 Kali 容器、执行预算、事件驱动的世界状态与独立验证。</sub>
 
 [Architecture v2 ↗](https://github.com/red-copilot/red-copilot/blob/main/docs/agent-architecture-v2.md) · [Repository ↗](https://github.com/red-copilot/red-copilot)
 
 ### <img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-harness-sdk.svg" width="34" align="center" alt="" /> Red Harness · Go SDK
 
-A Go-native execution boundary with Library, CLI, and HTTP interfaces, focused on container isolation, execution budgets, SQLite auditing, and verifier-controlled outcomes.
+A Go-native execution boundary exposed as a library, CLI, and local HTTP service. It focuses on container isolation, execution budgets, SQLite-backed audit records, and verifier-controlled outcomes.
 
-<sub>Go 原生执行边界与 SDK，提供 Library、CLI、HTTP 接入，聚焦容器隔离、执行预算、SQLite 审计与验证器控制的结果。</sub>
+<sub>Go 原生执行边界，提供库、CLI 与本地 HTTP 服务，重点覆盖容器隔离、执行预算、SQLite 审计记录和由验证器裁定的结果。</sub>
 
 [Repository ↗](https://github.com/red-copilot/harness)
 
 ### <img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-arl.svg" width="34" align="center" alt="" /> ARL 3.0 · Asset Reconnaissance Lighthouse
 
-A Go-based external attack surface management platform for traceable asset discovery workflows, with a React console and REST/SSE APIs.
+A Go-based external attack surface management platform that organizes authorized asset discovery into traceable workflows, with a React console and REST/SSE APIs.
 
-<sub>基于 Go 的外部攻击面管理平台，将资产发现组织为可追溯工作流，并提供 React 控制台与 REST/SSE API。</sub>
+<sub>基于 Go 的外部攻击面管理平台，将已获授权的资产发现组织为可追溯工作流，并提供 React 控制台与 REST/SSE API。</sub>
 
 [Repository ↗](https://github.com/red-copilot/red-x)
 
