@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="480" viewBox="0 0 1600 480" role="img" aria-labelledby="title desc">
+  <title id="title">Red Copilot — AI × Offensive Security</title>
+  <desc id="desc">A light technical banner with an X-shaped targeting reticle, the Red Copilot wordmark, and three capability layers: autonomy, trust boundary, and attack surface.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f3ec"/>
+      <stop offset=".52" stop-color="#fbfaf7"/>
+      <stop offset="1" stop-color="#f2e9e3"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#dc2626"/>
+      <stop offset=".55" stop-color="#b91c1c"/>
+      <stop offset="1" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#b91c1c" stop-opacity=".12"/>
+      <stop offset=".58" stop-color="#b91c1c" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#b91c1c" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#991b1b" stroke-opacity=".11" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect width="1600" height="480" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1600" height="480" fill="url(#bg)"/>
+    <rect x="1" y="1" width="1598" height="478" rx="23" fill="none" stroke="#d6d3d1"/>
+    <rect width="1600" height="480" fill="url(#grid)"/>
+    <circle cx="1270" cy="240" r="310" fill="url(#glow)"/>
+
+    <path d="M0 386H1600" stroke="#d6d3d1" stroke-width="1"/>
+    <path d="M0 72H1600" stroke="#d6d3d1" stroke-width="1" stroke-opacity=".64"/>
+    <path d="M68 0V480" stroke="#d6d3d1" stroke-width="1" stroke-opacity=".48"/>
+    <path d="M1532 0V480" stroke="#d6d3d1" stroke-width="1" stroke-opacity=".48"/>
+
+    <g fill="none" stroke="#dc2626">
+      <circle cx="1264" cy="238" r="168" stroke-opacity=".2" stroke-width="1"/>
+      <circle cx="1264" cy="238" r="118" stroke-opacity=".32" stroke-width="1"/>
+      <circle cx="1264" cy="238" r="64" stroke-opacity=".5" stroke-width="1"/>
+      <circle cx="1264" cy="238" r="238" stroke-opacity=".1" stroke-width="1" stroke-dasharray="3 11"/>
+      <path d="M1264 40V124M1264 352V436M1066 238H1150M1378 238H1462" stroke-opacity=".38"/>
+      <path d="M1079 53L1180 154M1348 322L1449 423M1449 53L1348 154M1180 322L1079 423" stroke-opacity=".18"/>
+    </g>
+
+    <g stroke="url(#signal)" stroke-linecap="round">
+      <path d="M1177 151L1351 325" stroke-width="18"/>
+      <path d="M1351 151L1177 325" stroke-width="18"/>
+    </g>
+    <g stroke="#ffffff" stroke-linecap="round" stroke-opacity=".95">
+      <path d="M1264 208V268" stroke-width="4"/>
+      <path d="M1234 238H1294" stroke-width="4"/>
+    </g>
+    <circle cx="1264" cy="238" r="13" fill="#ffffff"/>
+    <circle cx="1264" cy="238" r="6" fill="#b91c1c"/>
+
+    <g fill="#dc2626">
+      <circle cx="1088" cy="127" r="4"/>
+      <circle cx="1434" cy="109" r="3"/>
+      <circle cx="1406" cy="365" r="4"/>
+      <circle cx="1110" cy="342" r="3"/>
+      <circle cx="1264" cy="70" r="3"/>
+    </g>
+    <g stroke="#dc2626" stroke-opacity=".32">
+      <path d="M1088 127L1160 185M1434 109L1354 166M1406 365L1334 307M1110 342L1180 288"/>
+    </g>
+
+    <g font-family="Arial,Helvetica,sans-serif">
+      <rect x="68" y="104" width="10" height="10" fill="#b91c1c"/>
+      <text x="94" y="114" fill="#3f3f46" font-size="15" font-weight="700" letter-spacing="4.4">RED COPILOT</text>
+      <text x="478" y="114" fill="#71717a" font-size="13" font-weight="700" letter-spacing="2.6">AI-NATIVE OFFENSIVE SECURITY</text>
+
+      <text x="68" y="224" fill="#111113" font-size="94" font-weight="800" letter-spacing="-3">AI</text>
+      <text x="184" y="225" fill="#b91c1c" font-size="108" font-weight="500">×</text>
+      <text x="300" y="224" fill="#111113" font-size="76" font-weight="800" letter-spacing="-1.5">OFFENSIVE</text>
+      <text x="300" y="312" fill="#111113" font-size="76" font-weight="800" letter-spacing="-1.5">SECURITY</text>
+
+      <text x="72" y="363" fill="#52525b" font-size="17" letter-spacing="1.4">AUTONOMOUS AGENTS · ISOLATED EXECUTION · VERIFIED OUTCOMES</text>
+      <text x="1264" y="438" text-anchor="middle" fill="#71717a" font-size="12" font-weight="700" letter-spacing="3.2">CONTROL THE LOOP</text>
+
+      <g font-size="13" font-weight="700" letter-spacing="1.7">
+        <text x="72" y="442" fill="#b91c1c">01</text>
+        <text x="104" y="442" fill="#3f3f46">AUTONOMY</text>
+        <text x="252" y="442" fill="#b91c1c">02</text>
+        <text x="284" y="442" fill="#3f3f46">TRUST BOUNDARY</text>
+        <text x="486" y="442" fill="#b91c1c">03</text>
+        <text x="518" y="442" fill="#3f3f46">ATTACK SURFACE</text>
+      </g>
+    </g>
+
+    <path d="M1532 92V388" stroke="#b91c1c" stroke-opacity=".28"/>
+    <path d="M1510 118L1532 96L1554 118" fill="none" stroke="#b91c1c" stroke-opacity=".42"/>
+  </g>
+</svg>

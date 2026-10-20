@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">ARL / red-x — attack surface discovery</title>
+  <rect x="1" y="1" width="94" height="94" rx="20" fill="#0a0a0b" stroke="#3f3f46"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="48" cy="48" r="25" stroke="#52525b" stroke-width="1.5"/>
+    <path d="M48 23a25 25 0 0 1 25 25" stroke="#ff3b3b" stroke-width="2.2"/>
+    <path d="M48 33a15 15 0 0 1 15 15" stroke="#ff3b3b" stroke-width="2" stroke-opacity=".72"/>
+    <path d="M48 48l18-18" stroke="#ff3b3b" stroke-width="1.8"/>
+    <circle cx="66" cy="30" r="4.5" fill="#ff3b3b" stroke="none"/>
+    <circle cx="48" cy="48" r="3" fill="#ffffff" stroke="none"/>
+    <circle cx="32" cy="60" r="3" fill="#ffffff" stroke-opacity=".82" stroke="none"/>
+    <circle cx="61" cy="63" r="2.2" fill="#ffffff" stroke-opacity=".62" stroke="none"/>
+  </g>
+</svg>

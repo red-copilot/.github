@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Red Harness — evaluation runtime</title>
+  <rect x="1" y="1" width="94" height="94" rx="20" fill="#0a0a0b" stroke="#3f3f46"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 20h10M20 20v10M76 20h-10M76 20v10M20 76h10M20 76v-10M76 76h-10M76 76v-10" stroke="#ff3b3b" stroke-opacity=".72" stroke-width="2"/>
+    <circle cx="48" cy="48" r="21" stroke="#ffffff" stroke-opacity=".72" stroke-width="2"/>
+    <circle cx="48" cy="48" r="12" stroke="#ff3b3b" stroke-width="2"/>
+    <path d="M48 27v9M48 60v9M27 48h9M60 48h9" stroke="#ff3b3b" stroke-width="2" stroke-opacity=".78"/>
+    <path d="M40 49l5 5 12-13" stroke="#ffffff" stroke-width="3"/>
+  </g>
+</svg>

@@ -1,11 +1,22 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner.svg" alt="Red Copilot — AI × Offensive Security" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner-light.svg" />
+    <img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner-light.svg" alt="Red Copilot — AI × Offensive Security" width="100%" />
+  </picture>
 </p>
 
 <h2 align="center">AI × Offensive Security</h2>
 
 <p align="center">
   <strong>Autonomous agents. Isolated execution. Verified outcomes.</strong>
+</p>
+
+<p align="center">
+  <kbd>EVALUATE</kbd>&nbsp;&nbsp;
+  <kbd>EXECUTE</kbd>&nbsp;&nbsp;
+  <kbd>VERIFY</kbd>&nbsp;&nbsp;
+  <kbd>DISCOVER</kbd>
 </p>
 
 ---
@@ -33,42 +44,52 @@ We focus on the system around the model—not just the prompt. Reliable offensiv
   </tr>
 </table>
 
-## Three layers
+## System map
 
-```text
-                    ┌─────────────────────────┐
-                    │       RED COPILOT       │
-                    │  AI × OFFENSIVE SECURITY│
-                    └────────────┬────────────┘
-                                 │
-          ┌──────────────────────┼──────────────────────┐
-          │                      │                      │
-   ┌──────▼──────┐        ┌──────▼──────┐        ┌──────▼──────┐
-   │   EVALUATE  │        │   EXECUTE   │        │   DISCOVER  │
-   │ Red Harness │        │ Harness SDK │        │  ARL/red-x  │
-   └─────────────┘        └─────────────┘        └─────────────┘
-      Agent evals          Trust boundary         Attack surface
+```mermaid
+flowchart LR
+    RC["RED COPILOT<br/>AI × Offensive Security"]:::core
+    EV["Red Harness<br/>Agent evaluation"]:::project
+    EX["Harness Go SDK<br/>Execution + trust boundary"]:::project
+    DS["ARL / red-x<br/>Attack surface discovery"]:::project
+    VR["Verifier / Evaluator<br/>Authoritative result"]:::verify
+
+    RC --> EV
+    EV --> EX
+    EX --> DS
+    EX --> VR
+    VR -. feedback .-> EV
+
+    classDef core fill:#111113,stroke:#ff2d2d,color:#ffffff,stroke-width:2px;
+    classDef project fill:#18181b,stroke:#52525b,color:#fafafa,stroke-width:1px;
+    classDef verify fill:#450a0a,stroke:#ef4444,color:#fecaca,stroke-width:1px;
+    linkStyle default stroke:#ef4444,stroke-width:1.5px;
 ```
+
+<p align="center"><sub>Only the verifier or benchmark evaluator can close the loop.</sub></p>
 
 ## Projects
 
 <table>
   <tr>
     <td width="33%" valign="top">
-      <p><strong>EVALUATE</strong></p>
-      <h3><a href="https://github.com/red-copilot/red-copilot">Red Harness</a></h3>
+      <p align="center"><a href="https://github.com/red-copilot/red-copilot"><img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-red-harness.svg" width="64" alt="Red Harness icon" /></a></p>
+      <h3 align="center"><a href="https://github.com/red-copilot/red-copilot">Red Harness</a></h3>
+      <p align="center"><strong>EVALUATE</strong></p>
       <p>A reproducible evaluation runtime for security agents. Task contracts, isolated execution, budgets, telemetry, and authoritative verification form one closed loop.</p>
       <p><code>Python</code> <code>Docker</code> <code>Pi</code></p>
     </td>
     <td width="33%" valign="top">
-      <p><strong>EXECUTE</strong></p>
-      <h3><a href="https://github.com/red-copilot/harness">Harness Go SDK</a></h3>
+      <p align="center"><a href="https://github.com/red-copilot/harness"><img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-harness-sdk.svg" width="64" alt="Harness Go SDK icon" /></a></p>
+      <h3 align="center"><a href="https://github.com/red-copilot/harness">Harness Go SDK</a></h3>
+      <p align="center"><strong>EXECUTE</strong></p>
       <p>A Go-native execution and trust boundary with container isolation, Pi RPC transport, SQLite audit records, and authoritative verification.</p>
       <p><code>Go</code> <code>Docker</code> <code>SQLite</code></p>
     </td>
     <td width="33%" valign="top">
-      <p><strong>DISCOVER</strong></p>
-      <h3><a href="https://github.com/red-copilot/red-x">ARL / red-x</a></h3>
+      <p align="center"><a href="https://github.com/red-copilot/red-x"><img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/project-arl.svg" width="64" alt="ARL / red-x icon" /></a></p>
+      <h3 align="center"><a href="https://github.com/red-copilot/red-x">ARL / red-x</a></h3>
+      <p align="center"><strong>DISCOVER</strong></p>
       <p>An authorization-first external attack surface management and asset reconnaissance platform with traceable assets, risk, tasks, and reports.</p>
       <p><code>Go</code> <code>React</code> <code>PostgreSQL</code></p>
     </td>
