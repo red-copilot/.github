@@ -2,142 +2,119 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner-light.svg" />
-    <img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner-light.svg" alt="Red Copilot：面向智能体时代的进攻性安全工程" width="100%" />
+    <img src="https://raw.githubusercontent.com/red-copilot/.github/main/assets/red-copilot-banner-light.svg" alt="Red Copilot — Security Engineering for the Agentic Era" width="100%" />
   </picture>
 </p>
 
 <p align="center">
-  <strong>面向智能体时代的进攻性安全工程</strong>
+  <strong>Security Engineering for the Agentic Era</strong>
   <br/>
-  <sub>让安全智能体不止能够行动，更能够验证结果。</sub>
+  <sub>面向智能体时代的安全工程</sub>
 </p>
 
-<h1 align="center">自主行动不够，<br/>结果必须可验证。</h1>
+<h1 align="center">From Agent Actions to Verifiable Outcomes</h1>
+<p align="center"><strong>从智能体行动，到可验证的结果</strong></p>
 
 <p align="center">
-  我们构建安全智能体的工程基础设施，<br/>
-  让任务执行具备明确边界、完整观测与独立验证。
-</p>
-
-<p align="center">
-  <code>规划</code> → <code>执行</code> → <code>观测</code> → <code>验证</code>
+  We build engineering systems that make security agents controllable, observable, and verifiable.
+  <br/>
+  <sub>我们构建可控、可观测、可验证的安全智能体工程系统。</sub>
 </p>
 
 <p align="center">
-  <a href="https://github.com/orgs/red-copilot/repositories">浏览全部项目</a> ·
-  <a href="https://github.com/red-copilot/.github/blob/main/CONTRIBUTING.md">参与贡献</a> ·
-  <a href="https://github.com/red-copilot/.github/blob/main/SECURITY.md">安全政策</a>
+  <code>Plan</code> → <code>Execute</code> → <code>Observe</code> → <code>Verify</code>
+  <br/>
+  <sub>规划 → 执行 → 观测 → 验证</sub>
+</p>
+
+<p align="center">
+  <a href="https://github.com/orgs/red-copilot/repositories">Explore Repositories · 浏览仓库</a> ·
+  <a href="https://github.com/red-copilot/.github/blob/main/CONTRIBUTING.md">Contribute · 参与贡献</a> ·
+  <a href="https://github.com/red-copilot/.github/blob/main/SECURITY.md">Security Policy · 安全政策</a>
 </p>
 
 ---
 
-## 我们相信什么
+## What We Believe
+<sub>我们的理念</sub>
 
-### 智能体的声明，不等于事实。
+### An agent's claim is not proof.
+<sub>智能体的声明，不等于事实。</sub>
 
-一个模型声称任务已完成，不代表目标真的达成；工具返回成功，也不代表结果正确。
+A model saying “done” does not prove that an objective has been achieved. A successful tool call does not guarantee a correct outcome.
 
-可靠的安全自动化需要的不只是更强的模型，还需要明确的授权范围、受控的执行环境、有效的反馈机制、可恢复的工作流，以及独立于智能体的结果验证。
+Reliable automation needs more than model capability. It needs explicit authorization, bounded execution, observable behavior, recoverable workflows, and independent verification.
 
-## 我们构建什么
+<sub>模型说“完成了”，不代表目标真的达成；工具调用成功，也不代表结果正确。可靠的自动化不仅需要模型能力，还需要明确的授权边界、受控执行、过程观测、失败恢复与独立验证。</sub>
 
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <p><strong>01 / 智能体运行时</strong></p>
-      <h3>让复杂任务有序运行</h3>
-      <p>处理智能体接入、工具编排、会话状态、反馈闭环与失败恢复。</p>
-    </td>
-    <td width="33%" valign="top">
-      <p><strong>02 / 执行控制</strong></p>
-      <h3>让行动始终处于边界内</h3>
-      <p>通过授权范围、环境隔离、最小权限、资源预算与审计轨迹约束执行。</p>
-    </td>
-    <td width="33%" valign="top">
-      <p><strong>03 / 独立验证</strong></p>
-      <h3>让结果能够被证明</h3>
-      <p>使用任务契约、独立验证器、可复现实验与证据记录判断任务是否真正完成。</p>
-    </td>
-  </tr>
-</table>
+## What We Build
+<sub>我们构建什么</sub>
 
-## 系统如何工作
+### Agent Execution & Evaluation
+<sub>智能体执行与评测</sub>
 
-```mermaid
-flowchart LR
-    A["智能体"] --> B["运行控制"]
-    B --> C["工具与目标环境"]
-    C --> D["执行观测"]
-    D --> A
-    C --> E["独立验证器"]
-    E --> F["结果证据"]
-    F -. 反馈 .-> A
-    classDef core fill:#451010,stroke:#ef4444,color:#fff,stroke-width:2px;
-    classDef node fill:#18181b,stroke:#71717a,color:#fafafa;
-    class B,E core;
-    class A,C,D,F node;
-```
+We build runtimes that connect agents, tasks, tools, target environments, budgets, and verifiers through explicit contracts. Execution traces and results should be inspectable, reproducible, and comparable.
 
-<p align="center">
-  智能体提出行动，环境产生反馈，验证器依据证据作出判定。
-</p>
+<sub>通过明确的接口约定连接智能体、任务、工具、目标环境、预算与验证器，让执行轨迹可检查、结果可复现、方案可比较。</sub>
 
-## 项目版图
+### Controlled Security Automation
+<sub>可控的安全自动化</sub>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <p><strong>01 — 智能体评测与运行时</strong></p>
-      <h3><a href="https://github.com/red-copilot/red-harness">Red Harness</a></h3>
-      <p>面向安全智能体的可复现评测运行时。将任务、智能体、目标环境、模型与工具访问、预算、遥测和验证机制清晰分离，让执行过程可追踪、结果可复核。</p>
-      <p><code>智能体评测</code> <code>Python</code> <code>Docker</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <p><strong>02 — 工程化与系统集成</strong></p>
-      <h3>运行时与 SDK 生态</h3>
-      <p>围绕受控执行、标准化接口与工程集成，逐步构建可复用的安全自动化基础组件。</p>
-      <p><code>运行时</code> <code>SDK</code> <code>系统集成</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <p><strong>03 — 安全研究工作流</strong></p>
-      <h3>授权范围内的自动化探索</h3>
-      <p>探索资产发现、任务执行与结果整理的工程化流程，强调授权边界、过程留痕与结果验证。</p>
-      <p><code>安全研究</code> <code>自动化</code> <code>可追溯</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <p><strong>04 — 评测与基准接入</strong></p>
-      <h3>让实验可复现、可比较</h3>
-      <p>通过统一的基准适配与任务生命周期管理，记录执行过程与评测结果，为不同智能体方案提供可比较的实验依据。</p>
-      <p><code>基准测试</code> <code>实验复现</code> <code>结果审计</code></p>
-    </td>
-  </tr>
-</table>
+We focus on authorization boundaries, environment isolation, credential handling, resource limits, and auditability for security workflows.
 
-## 工程原则
+<sub>围绕安全工作流中的授权范围、环境隔离、凭据保护、资源限制与审计追踪开展工程实践。</sub>
 
-| 原则 | 实践方式 |
+### Attack Surface & Asset Reconnaissance
+<sub>攻击面与资产侦察</sub>
+
+We develop workflows for organizing assets, tracking observations, managing findings, and producing traceable results within authorized scopes.
+
+<sub>在已授权范围内，探索资产组织、发现记录、风险管理与可追溯结果交付。</sub>
+
+## Projects & Engineering
+<sub>项目与工程实践</sub>
+
+### Red Harness
+<sub>安全智能体执行与评测框架</sub>
+
+Red Harness explores reproducible execution for security agents. Its engineering work separates task definitions, agent execution, target environments, model and tool access, budgets, telemetry, and verification.
+
+<sub>Red Harness 面向安全智能体的可复现执行与评测，将任务定义、智能体运行、目标环境、模型与工具访问、预算、遥测和结果验证拆分为清晰的工程边界。</sub>
+
+Current implementations include a Python-based evaluation runtime and a Go-native SDK. They are separate implementations with different integration contracts.
+
+<sub>目前包含 Python 评测运行时与 Go 原生 SDK 两条实现路线；两者是独立实现，接口与集成方式并不相同。</sub>
+
+### ARL · Asset Reconnaissance Lighthouse
+<sub>资产侦察灯塔</sub>
+
+ARL is an external attack surface management and asset reconnaissance platform for authorized security testing. It organizes organizations, domains, assets, findings, and tasks into a traceable workflow.
+
+<sub>ARL 面向已授权安全测试，围绕组织、域名、资产、风险与任务构建可追溯的外部攻击面管理和资产侦察流程。</sub>
+
+## How We Approach Engineering
+<sub>我们的工程原则</sub>
+
+| Principle | 实践原则 |
 |---|---|
-| **授权优先** | 先确认授权与测试范围，再执行安全任务。 |
-| **证据优先** | 由可检查的证据支持结论，而不是依赖模型自述。 |
-| **默认隔离** | 隔离执行环境、凭据与资源访问，降低越界风险。 |
-| **有界执行** | 对权限、时间、调用次数与资源消耗设定限制。 |
-| **可复现** | 让任务配置、执行轨迹与结果可以审计、回放和比较。 |
-| **明确职责** | 将任务、环境、智能体、模型、工具与验证器分离，减少职责混杂。 |
+| **Authorization first** | **授权优先：** 明确目标范围与权限边界后再执行。 |
+| **Evidence over claims** | **证据优先：** 依据可检查的证据判断结果，而不是依赖模型自述。 |
+| **Isolation by design** | **默认隔离：** 限制环境、凭据与资源访问，降低越界风险。 |
+| **Bounded execution** | **有界执行：** 对权限、时长、调用量与资源消耗设定限制。 |
+| **Reproducibility** | **可复现：** 保留关键配置、执行轨迹与结果，支持审计和比较。 |
+| **Clear boundaries** | **职责清晰：** 区分任务、环境、智能体、模型、工具与验证器。 |
 
-## 加入我们
+## Join the Work
+<sub>参与建设</sub>
 
-我们关注的不只是让智能体“跑起来”，而是建立一套能够持续评测、可靠执行并验证结果的安全工程体系。
+Explore the repositories to see what is implemented today. Contributions are welcome in the form of reproducible bug reports, tests, documentation, architecture discussions, and code.
 
-- 浏览组织中的开源项目，了解当前实现与进展。
-- 通过问题反馈、测试用例、文档和代码改进参与建设。
-- 讨论架构时优先提供可复现的案例、数据与证据。
+<sub>欢迎浏览仓库了解当前实现，也欢迎通过可复现的问题报告、测试、文档、架构讨论与代码参与建设。</sub>
 
 <p align="center">
-  <strong>构建能够行动的智能体，打造能够证明结果的工程系统。</strong>
-  <br/><br/>
-  <a href="https://github.com/orgs/red-copilot/repositories">查看全部仓库 ↗</a>
+  <strong>Build agents that can act. Engineer systems that can prove the outcome.</strong>
+  <br/>
+  <sub>构建能够行动的智能体，打造能够验证结果的工程系统。</sub>
 </p>
 
-<p align="center"><sub>仅用于获得授权的安全测试、竞赛与研究。</sub></p>
+<p align="center"><sub>For authorized security testing, competitions, and research only. · 仅用于已获授权的安全测试、竞赛与研究。</sub></p>
