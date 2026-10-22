@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="480" viewBox="0 0 1600 480" role="img" aria-labelledby="title desc">
+  <title id="title">Red Copilot — From agent actions to verifiable outcomes</title>
+  <desc id="desc">Dark Signal Editorial banner with a checkpoint mark, bilingual positioning, and an authorize, contain, observe, verify evidence chain.</desc>
+  <rect width="1600" height="480" fill="#08090B"/>
+  <g fill="none" stroke="#111214" stroke-width="1" opacity="1">
+    <path d="M0 80H1600M0 400H1600M64 0V480M1536 0V480"/>
+  </g>
+  <g transform="translate(88 60)">
+    <rect width="34" height="34" rx="7.5" fill="#C92B20"/>
+    <path d="M7 17.5 14 24.5 27 10" fill="none" stroke="#F6F2E9" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="26.5" cy="7.5" r="1.8" fill="#161719"/>
+    <text x="48" y="24" fill="#F6F2E9" font-family="Ubuntu Sans, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="1.6">RED COPILOT</text>
+  </g>
+  <text x="1512" y="86" text-anchor="end" fill="#FF5A4E" font-family="Ubuntu Sans Mono, SFMono-Regular, Consolas, monospace" font-size="20" font-weight="700" letter-spacing="1.35">SECURITY ENGINEERING / AGENTIC ERA</text>
+
+  <text x="88" y="210" fill="#F6F2E9" font-family="Ubuntu Sans, Helvetica Neue, Arial, sans-serif" font-size="66" font-weight="800" letter-spacing="-2.1">From agent actions</text>
+  <text x="88" y="278" fill="#F6F2E9" font-family="Ubuntu Sans, Helvetica Neue, Arial, sans-serif" font-size="66" font-weight="800" letter-spacing="-2.1">to verifiable outcomes.</text>
+  <text x="90" y="322" fill="#B8B2A7" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="24">从智能体行动到可验证的结果。</text>
+  <text x="90" y="369" fill="#B8B2A7" font-family="Ubuntu Sans Mono, SFMono-Regular, Consolas, monospace" font-size="20" font-weight="600" letter-spacing="1.1">CONTROLLED / OBSERVABLE / VERIFIABLE</text>
+
+  <g>
+    <rect x="880" y="88" width="632" height="308" fill="#111214" stroke="#3A3935"/>
+    <text x="908" y="126" fill="#FF5A4E" font-family="Ubuntu Sans Mono, SFMono-Regular, Consolas, monospace" font-size="20" font-weight="700" letter-spacing="1.2">EVIDENCE CHAIN /</text>
+    <text x="1140" y="126" fill="#FF5A4E" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700">证据链</text>
+    <path d="M962 148V222M1088 148V222M1214 148V222M1340 148V222" stroke="#3A3935" stroke-width="1.4"/>
+    <circle cx="962" cy="238" r="8" fill="#08090B" stroke="#FF5A4E" stroke-width="2.5"/>
+    <circle cx="1088" cy="238" r="8" fill="#08090B" stroke="#FF5A4E" stroke-width="2.5"/>
+    <circle cx="1214" cy="238" r="8" fill="#08090B" stroke="#FF5A4E" stroke-width="2.5"/>
+    <circle cx="1340" cy="238" r="8" fill="#08090B" stroke="#FF5A4E" stroke-width="2.5"/>
+    <g text-anchor="middle" font-family="Ubuntu Sans Mono, SFMono-Regular, Consolas, monospace">
+      <text x="962" y="169" fill="#FF5A4E" font-size="20" font-weight="700">01</text>
+      <text x="962" y="194" fill="#F6F2E9" font-size="24" font-weight="700">AUTHORIZE</text>
+      <text x="962" y="218" fill="#B8B2A7" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="20">授权</text>
+      <text x="1088" y="169" fill="#FF5A4E" font-size="20" font-weight="700">02</text>
+      <text x="1088" y="194" fill="#F6F2E9" font-size="24" font-weight="700">CONTAIN</text>
+      <text x="1088" y="218" fill="#B8B2A7" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="20">隔离</text>
+      <text x="1214" y="169" fill="#FF5A4E" font-size="20" font-weight="700">03</text>
+      <text x="1214" y="194" fill="#F6F2E9" font-size="24" font-weight="700">OBSERVE</text>
+      <text x="1214" y="218" fill="#B8B2A7" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="20">观测</text>
+      <text x="1340" y="169" fill="#FF5A4E" font-size="20" font-weight="700">04</text>
+      <text x="1340" y="194" fill="#F6F2E9" font-size="24" font-weight="700">VERIFY</text>
+      <text x="1340" y="218" fill="#B8B2A7" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="20">验证</text>
+    </g>
+    <path d="M976 282H1066L1098 262H1198L1230 282H1320L1352 262H1408" fill="none" stroke="#F6F2E9" stroke-width="2.2"/>
+    <circle cx="976" cy="282" r="5" fill="#F6F2E9"/>
+    <circle cx="1066" cy="282" r="5" fill="#FF5A4E"/>
+    <circle cx="1098" cy="262" r="5" fill="#F6F2E9"/>
+    <circle cx="1198" cy="262" r="5" fill="#F6F2E9"/>
+    <circle cx="1230" cy="282" r="5" fill="#FF5A4E"/>
+    <circle cx="1320" cy="282" r="5" fill="#F6F2E9"/>
+    <circle cx="1352" cy="262" r="5" fill="#F6F2E9"/>
+    <circle cx="1408" cy="262" r="5" fill="#FF5A4E"/>
+    <circle cx="1458" cy="282" r="20" fill="none" stroke="#FF5A4E" stroke-width="2.5"/>
+    <path d="M1448 282 1456 290 1470 273" fill="none" stroke="#FF5A4E" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="976" y="330" fill="#B8B2A7" font-family="Ubuntu Sans Mono, SFMono-Regular, Consolas, monospace" font-size="20" font-weight="600">EVIDENCE STREAM</text>
+    <text x="1438" y="352" text-anchor="end" fill="#B8B2A7" font-family="Ubuntu Sans Mono, SFMono-Regular, Consolas, monospace" font-size="20" font-weight="600">INDEPENDENT VERIFIER</text>
+  </g>
+  <rect x="88" y="393" width="10" height="10" fill="#FF5A4E"/>
+</svg>

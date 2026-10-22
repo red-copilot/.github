@@ -1,14 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title">
-  <title id="title">ARL / red-x — attack surface discovery</title>
-  <rect x="1" y="1" width="94" height="94" rx="20" fill="#0a0a0b" stroke="#3f3f46"/>
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="48" cy="48" r="25" stroke="#52525b" stroke-width="1.5"/>
-    <path d="M48 23a25 25 0 0 1 25 25" stroke="#ff3b3b" stroke-width="2.2"/>
-    <path d="M48 33a15 15 0 0 1 15 15" stroke="#ff3b3b" stroke-width="2" stroke-opacity=".72"/>
-    <path d="M48 48l18-18" stroke="#ff3b3b" stroke-width="1.8"/>
-    <circle cx="66" cy="30" r="4.5" fill="#ff3b3b" stroke="none"/>
-    <circle cx="48" cy="48" r="3" fill="#ffffff" stroke="none"/>
-    <circle cx="32" cy="60" r="3" fill="#ffffff" stroke-opacity=".82" stroke="none"/>
-    <circle cx="61" cy="63" r="2.2" fill="#ffffff" stroke-opacity=".62" stroke="none"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">ARL 3.0 asset reconnaissance</title>
+  <desc id="desc">A checkpoint square containing an authorized asset map and verified observation points.</desc>
+  <rect x="2" y="2" width="92" height="92" rx="20" fill="#C92B20"/>
+  <path d="M27 27H69V69H27Z" fill="none" stroke="#F6F2E9" stroke-width="1.7" opacity=".62"/>
+  <path d="M48 20V76M20 48H76" fill="none" stroke="#F6F2E9" stroke-width="1.7" opacity=".62"/>
+  <path d="M31 63 46 49 55 57 68 35" fill="none" stroke="#F6F2E9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="31" cy="63" r="3.3" fill="#F6F2E9"/>
+  <circle cx="46" cy="49" r="3.3" fill="#F6F2E9"/>
+  <circle cx="55" cy="57" r="3.3" fill="#F6F2E9"/>
+  <circle cx="68" cy="35" r="4.2" fill="#161719" stroke="#F6F2E9" stroke-width="1.7"/>
 </svg>

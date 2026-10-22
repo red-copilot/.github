@@ -1,43 +1,68 @@
-# Red Copilot · Shared GitHub Resources
+<p align="center">
+  <img src="assets/red-copilot-mark.svg" width="56" alt="Red Copilot checkpoint mark" />
+</p>
 
-**Shared documentation, community standards, and visual assets for the Red Copilot organization.**
+<h1 align="center">Red Copilot · Engineering Resources</h1>
 
-**Red Copilot 组织的共享文档、社区规范与视觉资源。** 本仓库维护各项目共用的 GitHub 资源；组织介绍请访问 [公开主页](profile/README.md)。
+<p align="center">
+  Shared organization identity, community standards, and engineering guidance.<br/>
+  <sub>Red Copilot 组织的共享品牌、社区规范与工程资源。</sub>
+</p>
 
-## Repository Contents · 仓库内容
+<p align="center">
+  <a href="https://github.com/red-copilot">Organization profile · 组织主页 ↗</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/orgs/red-copilot/repositories">Projects · 核心项目 ↗</a>
+</p>
 
-- [`profile/README.md`](profile/README.md) — public organization homepage · 组织公开主页
-- [`assets/`](assets/) — shared banners and visual assets · 共享 Banner 与视觉资源
-- [`CONTRIBUTING.md`](CONTRIBUTING.md) — contribution and pull request expectations · 贡献规范
-- [`SECURITY.md`](SECURITY.md) — vulnerability reporting guidance · 漏洞报告与安全政策
+## Start here
 
-## README Writing Standard · README 编写规范
+<sub>从这里开始</sub>
 
-Each project README should help readers answer four questions quickly:
+| Resource | Purpose |
+|---|---|
+| [`profile/README.md`](profile/README.md) | Organization profile source · 组织主页源文件 |
+| [`assets/`](assets/) | Brand marks, light/dark banners, and project icons · 品牌标记、明暗 Banner 与项目图标 |
+| [`BRAND.md`](BRAND.md) | Signal Editorial identity, metadata, and accessibility rules · 品牌规范与元数据 |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution and review expectations · 贡献与评审规范 |
+| [`SECURITY.md`](SECURITY.md) | Vulnerability reporting and authorization guidance · 漏洞报告与授权边界 |
 
-1. **What is it?** State the purpose, intended users, and current scope.
-2. **What works today?** Separate implemented capabilities from planned work and known limitations.
-3. **How do I start?** Provide a minimal, accurate quick-start path with prerequisites.
-4. **Where are the details?** Link to authoritative architecture, configuration, API, deployment, and operations documentation.
+## README standard
 
-各项目 README 应帮助读者快速回答四个问题：
+<sub>README 编写规范</sub>
 
-1. **项目是什么？** 明确定位与当前范围。
-2. **现在能做什么？** 区分已实现能力、计划和限制。
-3. **如何开始？** 提供最小且可维护的快速开始路径。
-4. **架构如何设计？** 链接到权威架构与运维文档。
+Every project README should help a new reader answer four questions quickly:
 
-## Shared Presentation · 统一展示约定
+1. **What is it?** State the purpose, intended users, and current scope.<br/>
+   <sub>项目是什么？明确目的、目标用户与当前范围。</sub>
+2. **What works today?** Separate implemented capabilities from planned work and known limitations.<br/>
+   <sub>现在能做什么？区分已实现能力、计划与已知限制。</sub>
+3. **How do I start?** Provide a minimal, accurate quick-start path with prerequisites.<br/>
+   <sub>如何开始？提供最小且可维护的快速开始路径与环境要求。</sub>
+4. **Where are the details?** Link to authoritative architecture, configuration, API, deployment, and operations documentation.<br/>
+   <sub>权威细节在哪里？链接到架构、配置、API、部署与运维文档。</sub>
 
-- Use the shared organization banner where it improves recognition. · 在适合的项目中使用共享 Banner。
-- Place English first and Chinese directly below it. · 英文在上，中文紧随其下。
-- Prefer architecture diagrams grounded in the actual implementation. · 架构图应反映真实实现。
-- Use badges sparingly; keep every badge factual, current, and verifiable. · 少用徽章，且每个徽章都应真实、及时、可核验。
-- Do not claim tests passed unless they were actually run. · 未实际执行的测试不得宣称通过。
-- Explain security boundaries, permissions, failure modes, and known limitations. · 明确说明安全边界、权限、失败模式与已知限制。
+## Shared presentation
 
-## Related Resources · 相关资源
+<sub>统一展示约定</sub>
 
-- [Organization profile](profile/README.md) · 组织主页
-- [Contributing guide](CONTRIBUTING.md) · 贡献指南
-- [Security policy](SECURITY.md) · 安全政策
+- Place English first and Chinese directly below it.<br/>
+  <sub>英文在上，中文紧随其下。</sub>
+- Use the shared organization banner where it improves recognition.<br/>
+  <sub>在适合的项目中使用共享 Banner。</sub>
+- Use diagrams grounded in the actual implementation.<br/>
+  <sub>图表应反映真实实现。</sub>
+- Use badges sparingly; every badge must be factual, current, and verifiable.<br/>
+  <sub>少用徽章，且每个徽章都应真实、及时、可核验。</sub>
+- Do not claim tests passed unless they were actually run.<br/>
+  <sub>未实际执行的测试不得宣称通过。</sub>
+- Explain authorization boundaries, permissions, failure modes, and known limitations.<br/>
+  <sub>明确说明授权边界、权限、失败模式与已知限制。</sub>
+
+## Contribute and report
+
+<sub>参与贡献与漏洞报告</sub>
+
+Use the [contribution guide](CONTRIBUTING.md) for code, tests, documentation, and architecture discussions. Report vulnerabilities through the [security policy](SECURITY.md) rather than a public issue.
+
+<sub>代码、测试、文档与架构讨论请遵循贡献指南；漏洞请通过安全政策私下报告。</sub>

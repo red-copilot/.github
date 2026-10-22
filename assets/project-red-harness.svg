@@ -1,11 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title">
-  <title id="title">Red Harness — evaluation runtime</title>
-  <rect x="1" y="1" width="94" height="94" rx="20" fill="#0a0a0b" stroke="#3f3f46"/>
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M20 20h10M20 20v10M76 20h-10M76 20v10M20 76h10M20 76v-10M76 76h-10M76 76v-10" stroke="#ff3b3b" stroke-opacity=".72" stroke-width="2"/>
-    <circle cx="48" cy="48" r="21" stroke="#ffffff" stroke-opacity=".72" stroke-width="2"/>
-    <circle cx="48" cy="48" r="12" stroke="#ff3b3b" stroke-width="2"/>
-    <path d="M48 27v9M48 60v9M27 48h9M60 48h9" stroke="#ff3b3b" stroke-width="2" stroke-opacity=".78"/>
-    <path d="M40 49l5 5 12-13" stroke="#ffffff" stroke-width="3"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Red Harness Python Runtime</title>
+  <desc id="desc">A checkpoint square containing a reproducible execution loop and verified result.</desc>
+  <rect x="2" y="2" width="92" height="92" rx="20" fill="#C92B20"/>
+  <circle cx="48" cy="48" r="23" fill="none" stroke="#F6F2E9" stroke-width="2.2"/>
+  <path d="M48 25v10M48 61v10M25 48h10M61 48h10" fill="none" stroke="#F6F2E9" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M37 49 45 57 60 38" fill="none" stroke="#F6F2E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="48" cy="25" r="3" fill="#161719"/>
+  <circle cx="48" cy="71" r="3" fill="#161719"/>
 </svg>
